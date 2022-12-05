@@ -27,9 +27,16 @@ const age = prompt('Quanti anni hai?' , '18');
 const totalPrice = price * kilometres;
 
 // if (age < 18) {
-const discount = totalPrice * 0.20;
-console.log(discount);
-// };
+    const discount = totalPrice * 0.20;
+    console.log(discount);
+// }
+// else if (age > 65) {
+    // const discount = totalPrice * 0.40;
+    // console.log(discount);
+// } 
+// else {
+    // totalPrice
+// } 
     
 const newPrice = totalPrice - discount;
 console.log(newPrice);

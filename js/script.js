@@ -26,15 +26,13 @@ const age = prompt('Quanti anni hai?' , '18');
 // 5 Calcolo il prezzo
 const totalPrice = price * kilometres;
 
-if (age < 18) {
-    totalPrice * 0.20;
-} 
-else if (age > 65) {
-    totalPrice * 0.40;
-}
-else {
-    totalPrice;
-}
+// if (age < 18) {
+const discount = totalPrice * 0.20;
+console.log(discount);
+// };
+    
+const newPrice = totalPrice - discount;
+console.log(newPrice);
 
 // Inseriamo il isultato nell'HTML
-targetElement.innerText = `Hai deciso di fare ${kilometres} KM, Hai ${age} anni: Il tuo biglietto costa ${totalPrice}€.`;
+targetElement.innerText = `Hai deciso di fare ${kilometres} KM, Hai ${age} anni: Il tuo biglietto costa ${newPrice} €.`;
